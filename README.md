@@ -104,21 +104,7 @@ Now that the new EFI partition is created, you need to format it as FAT32. This 
 sudo mkfs.fat -F32 /dev/disk0s1
 ```
 
-Replace `/dev/disk0s1` with the correct partition name (e.g., `/dev/disk0s1`).
-
-#### 8. **Mount the EFI Partition (Optional)**  
-If you need to mount the EFI partition to copy bootloader files, use the following command:
-
-```bash
-sudo mount /dev/disk0s1 /mnt
-```
-
-Replace `/dev/disk0s1` with the correct partition name. This will mount the EFI partition at `/mnt`, where you can copy your bootloader files.
-
-#### 9. **Reinstall or Restore Bootloader**  
-After recreating the EFI partition, you may need to reinstall or restore the bootloader (e.g., GRUB) to the EFI partition. The method for reinstalling the bootloader depends on the system and distribution you're using.
-
----
+Replace `/dev/disk0s1` with the correct partition name.
 
 ### Example Workflow Recap:
 
@@ -138,5 +124,4 @@ w                        # Write changes to disk
 
 sudo mkfs.fat -F32 /dev/disk0s1   # Format the new EFI partition as FAT32
 ```
-
 ---
