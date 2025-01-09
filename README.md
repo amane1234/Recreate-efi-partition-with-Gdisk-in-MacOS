@@ -50,9 +50,9 @@ If you have a corrupt or old EFI partition that you need to remove, delete it by
 
 ```bash
 d
+Partition number (1-2): 
+1
 ```
-
-Then, enter the partition number (e.g., `1` for the EFI partition).
 
 #### 4. **Create a New EFI Partition**  
 To create a new EFI partition, follow these steps:
@@ -127,6 +127,7 @@ diskutil list            # List all disks to identify the disk (e.g., /dev/disk0
 sudo gdisk /dev/disk0    # Open gdisk on the specified disk
 p                        # List current partitions
 d                        # Delete the existing EFI partition (if needed)
+1                        # Select Partition #1 (if needed)
 n                        # Create a new partition
 (Press Enter for default partition number)
 (Press Enter for default first sector)
