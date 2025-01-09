@@ -11,7 +11,7 @@ Since macOS's built-in `diskutil` tool does not fully support managing EFI parti
    You will need to download and install `gdisk` to handle GPT partitions. The latest version is available from [SourceForge](https://sourceforge.net/projects/gptfdisk/). Alternatively, on macOS, you can install it using [Homebrew](https://brew.sh/):
 
    ```bash
-   brew install gptfdisk
+   brew install --cask gdisk
    ```
 
 ---
