@@ -7,7 +7,7 @@ Since macOS's built-in `diskutil` tool does not fully support managing EFI parti
 - **EFI Partition**: This partition must be created on a GPT (GUID Partition Table) disk. It’s used to store UEFI bootloader files for UEFI-based systems.
 
 ### Prerequisites:
-1. **Download and Install `gdisk`**:  
+   **Download and Install `gdisk`**:  
    You will need to download and install `gdisk` to handle GPT partitions. The latest version is available from [SourceForge](https://sourceforge.net/projects/gptfdisk/). Alternatively, on macOS, you can install it using [Homebrew](https://brew.sh/):
 
    ```bash
