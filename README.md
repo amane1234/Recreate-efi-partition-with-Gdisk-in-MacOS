@@ -8,7 +8,7 @@
 
 2. **Launch `gdisk`**  
    ```bash
-   sudo gdisk /dev/disk0  # Replace with your disk
+   sudo gdisk /dev/disk0  # Replace `disk0` with your disk
    ```
 
 3. **Delete existing EFI partition**  
