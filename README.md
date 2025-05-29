@@ -1,10 +1,4 @@
-**Prerequisites:**  
-Install `gdisk` via Homebrew:  
-```bash
-brew install gdisk
-```
-
----
+### To (re)create an EFI Partition Using `gdisk` in macOS
 
 ### Steps:
 1. **Identify disk**  
